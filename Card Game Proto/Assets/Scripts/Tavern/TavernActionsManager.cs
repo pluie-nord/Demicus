@@ -6,25 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class TavernActionsManager : MonoBehaviour
 {
-    public void StartCardGame()
+    public void LoadScene(Object sceneToLoad)
     {
-        SceneManager.LoadScene(0);
-    }
-
-    private void Start()
-    {
-        CollisionEvents.OnCollision += TavernInteractions;
-    }
-
-    private void TavernInteractions(ICollision collision)
-    {
-        print("Подключенное на слушание событие затригеррилось");
-        switch(collision.ID)
-        {
-            case "001":
-                StartCardGame();
-                break;
-        }
+        SceneManager.LoadScene(sceneToLoad.name);
     }
 
 }
