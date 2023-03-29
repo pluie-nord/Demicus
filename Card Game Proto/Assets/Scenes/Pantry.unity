@@ -2043,6 +2043,8 @@ MonoBehaviour:
   recipies:
   - {fileID: 11400000, guid: ea42ce5dda3f2f542b8cf7f64bd002ec, type: 2}
   - {fileID: 11400000, guid: c50dee9ef2fcb8a488f323d4bbf82ba4, type: 2}
+  - {fileID: 11400000, guid: 1bcfe6586d920d24aa5e24935f9979fc, type: 2}
+  - {fileID: 11400000, guid: 2f9bc01d7b53b52418540786ad44e405, type: 2}
   imgR: {fileID: 1562334713}
   nameR: {fileID: 595615052}
   descriptionR: {fileID: 2118695264}

@@ -21,7 +21,7 @@ public class PantryButtonManager : MonoBehaviour
         if (recipeBook.currentPage < recipeBook.recipies.Count)
         {
             recipeBook.UpdateUI( recipeBook.recipies[recipeBook.currentPage]);
-            buttonsOfRBook[1].interactable = true;
+            buttonsOfRBook[1].interactable = buttonsOfRBook[0].interactable = true;
         }
 
         if (recipeBook.currentPage == recipeBook.recipies.Count)
@@ -36,7 +36,7 @@ public class PantryButtonManager : MonoBehaviour
         if (recipeBook.currentPage > 1)
         {
             recipeBook.UpdateUI(recipeBook.recipies[recipeBook.currentPage-2]);
-            buttonsOfRBook[0].interactable = true;
+            buttonsOfRBook[0].interactable = buttonsOfRBook[1].interactable = true;
         }
         if (recipeBook.currentPage == 1)
         {
