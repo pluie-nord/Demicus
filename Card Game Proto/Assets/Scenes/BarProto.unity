@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 689644074}
   - component: {fileID: 689644075}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Card Game Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 1474537330}
   - component: {fileID: 1474537332}
   m_Layer: 5
-  m_Name: Card (2)
+  m_Name: Pantry Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 1950114022}
   - component: {fileID: 1950114021}
   m_Layer: 5
-  m_Name: Card (1)
+  m_Name: Exit Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
