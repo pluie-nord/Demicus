@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PantryButtonManager : MonoBehaviour
 {
@@ -47,5 +48,10 @@ public class PantryButtonManager : MonoBehaviour
     public void StartCooking()
     {
         Debug.Log("готовится");
+    }
+
+    public void ExitPantry()
+    {
+        SceneManager.LoadScene(1);
     }
 }
