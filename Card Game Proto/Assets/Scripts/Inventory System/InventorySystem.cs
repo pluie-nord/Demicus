@@ -58,7 +58,7 @@ public class InventorySystem : MonoBehaviour
         if(m_itemDictionary.TryGetValue(referenceData, out InventoryItem value))
         {
             value.RemoveFromStack();
-            inventoryUI.RemoveFromInventory(referenceData, value.stackSize);
+            //inventoryUI.RemoveFromInventory(referenceData, value.stackSize);
             if(value.stackSize==0)
             {
                 inventory.Remove(value);

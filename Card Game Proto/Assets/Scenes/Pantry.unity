@@ -1692,6 +1692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82bcb3b205a80e4a83c75c8c04067ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsOfRBook:
+  - {fileID: 1298470476}
+  - {fileID: 902398550}
 --- !u!1 &1615517768
 GameObject:
   m_ObjectHideFlags: 0
