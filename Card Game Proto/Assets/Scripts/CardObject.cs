@@ -18,8 +18,7 @@ public class CardObject : ScriptableObject
     public int Attention;
     public int Interest;
     public int Nonsense;
-    [TextArea]
-    public string Description;
+    [TextArea] public string Description;
     public Image CardDesign;
     public Effect CardEffect;
 }
