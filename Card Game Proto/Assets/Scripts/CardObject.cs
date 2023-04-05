@@ -13,7 +13,15 @@ public class CardObject : ScriptableObject
         action_neg
     };
 
+    public enum myStoryTypes
+    {
+        action,
+        place
+    }
+
     public myTypes Type = myTypes.story;
+    public myStoryTypes StoryCardType;
+    public myStoryTypes NextStoryCardType;
 
     public int Attention;
     public int Interest;

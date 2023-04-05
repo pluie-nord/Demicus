@@ -47,7 +47,7 @@ public class CardEventManager : MonoBehaviour
     public void EndGame()
     {
         //пересчет очков интереса с учетом соотношения карт
-        switch (cardManager.interest)
+        switch (cardManager.interest+cardManager.storyPoints)
         {
             case < 3:
                 EndingUI(true, "Гость дослушал, но ему не особо интересно. Он ничего не купил и ушел.");
@@ -60,14 +60,6 @@ public class CardEventManager : MonoBehaviour
                 break;
         }
         print("уровень завершен");
-
-        SceneManager.LoadScene(1);
-    }
-
-    private IEnumerator LoadScene()
-    {
-        yield return new WaitForSeconds(5);
-        SceneManager.LoadScene(1);
     }
 
     public void EndTurn()

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: ZeusCard1
   m_EditorClassIdentifier: 
   Type: 0
+  StoryCardType: 1
+  NextStoryCardType: 1
   Attention: 2
   Interest: 3
   Nonsense: 0

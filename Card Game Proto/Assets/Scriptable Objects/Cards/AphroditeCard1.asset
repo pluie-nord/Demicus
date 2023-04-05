@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: AphroditeCard1
   m_EditorClassIdentifier: 
   Type: 0
+  StoryCardType: 0
+  NextStoryCardType: 1
   Attention: 1
   Interest: 5
   Nonsense: 0

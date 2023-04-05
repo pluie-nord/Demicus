@@ -12,6 +12,8 @@ public class CardManager : MonoBehaviour
     public int interest=0;
     public int nonsense = 0;
 
+    public int storyPoints = 0; //их пересчитать в баланс интереса потом
+
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private GameObject cardHand;
     [SerializeField] private GameObject cardStand;
@@ -86,6 +88,23 @@ public class CardManager : MonoBehaviour
                 newStoryCard.transform.SetParent(cardStand.transform);
                 newStoryCard.transform.localPosition = new Vector3(215 * (cardHolder.story.Count-1), 365);
                 newStoryCard.transform.localScale = Vector3.one;
+                Destroy(newStoryCard.GetComponent<Card>());
+
+                if(cardHolder.story.Count>1)
+                {
+                    if (cardHolder.story[cardHolder.story.Count- 2].NextStoryCardType==card.StoryCardType)
+                    {
+                        storyPoints++;
+                    
+                    }
+                    else
+                    {
+                        storyPoints--;
+                    }
+                    print(storyPoints);
+                }
+                
+
                 break;
             case CardObject.myTypes.action_pos:
                 //карта действия со стороны игрока
@@ -114,7 +133,7 @@ public class CardManager : MonoBehaviour
         }
         //удалить карту с руки визуально
         Destroy(cardObject);
-        print(index);
+        //print(index);
         if(!isSwitch)
         {
             cardHolder.hand[index] = null;
