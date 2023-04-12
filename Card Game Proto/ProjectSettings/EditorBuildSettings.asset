@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pantry.unity
     guid: d5ff029296ac8bf41993673c58ff5d1e
+  - enabled: 1
+    path: Assets/Scenes/ProtoShop.unity
+    guid: b6b9eacaf730b1d49b789d34850a874b
   m_configObjects: {}
