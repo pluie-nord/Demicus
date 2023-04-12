@@ -14,7 +14,7 @@ public class RecipeBook : MonoBehaviour
     [SerializeField] private List<Button> buttons;
 
     public int currentPage;
-    private Recipe currentRecipe;
+    public Recipe currentRecipe;
 
     private void Start()
     {
@@ -32,10 +32,13 @@ public class RecipeBook : MonoBehaviour
         }
         currentPage = recipies.IndexOf(recipeToSet) + 1;
         currentRecipe = recipeToSet;
-        buttons[0].interactable = buttons[1].interactable = CheckIngredients();
+        foreach(var b in buttons)
+        {
+            b.interactable = CheckIngredientsRecipe();
+        }
     }
 
-    private bool CheckIngredients()
+    private bool CheckIngredientsRecipe()
     {
         bool allIngridients = true;
         foreach(InventoryItemData ingr in currentRecipe.ingredients)
@@ -47,6 +50,7 @@ public class RecipeBook : MonoBehaviour
         }
         return allIngridients;
     }
+
 
 
 

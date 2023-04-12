@@ -8,10 +8,12 @@ public class PantryButtonManager : MonoBehaviour
 {
     private RecipeBook recipeBook;
     [SerializeField] private List<Button> buttonsOfRBook;
+    private InventorySystem inventorySys;
 
     private void Start()
     {
         recipeBook = GetComponent<RecipeBook>();
+        inventorySys = FindObjectOfType<InventorySystem>();
         buttonsOfRBook[0].interactable = false;
         buttonsOfRBook[1].interactable = true;
     }
@@ -20,7 +22,7 @@ public class PantryButtonManager : MonoBehaviour
     {
         if (recipeBook.currentPage < recipeBook.recipies.Count)
         {
-            recipeBook.UpdateUI( recipeBook.recipies[recipeBook.currentPage]);
+            recipeBook.UpdateUI(recipeBook.recipies[recipeBook.currentPage]);
             buttonsOfRBook[1].interactable = buttonsOfRBook[0].interactable = true;
         }
 
@@ -47,7 +49,13 @@ public class PantryButtonManager : MonoBehaviour
 
     public void StartCooking()
     {
-        Debug.Log("готовится");
+        ItemToSell newItem = ScriptableObject.CreateInstance<ItemToSell>();
+        newItem.id = recipeBook.currentRecipe.id;
+        newItem.m_name = recipeBook.currentRecipe.m_name;
+        newItem.img = recipeBook.currentRecipe.img;
+        newItem.description = recipeBook.currentRecipe.description;
+        newItem.cost = recipeBook.currentRecipe.cost;
+        inventorySys.AddToSell(newItem);
     }
 
     public void ExitPantry()
