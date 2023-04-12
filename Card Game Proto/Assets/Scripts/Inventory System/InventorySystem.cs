@@ -16,11 +16,13 @@ public class InventorySystem : MonoBehaviour
 
     public Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
     public List<InventoryItem> inventory { get; set; }
+
     [SerializeField] List<InventoryItemData> m_items;
-    private InventoryUIManager inventoryUI;
+    //private InventoryUIManager inventoryUI;
 
     public Dictionary<ItemToSell, InventoryItemToSell> m_itemToSellDictionary;
     public List<InventoryItemToSell> inventoryToSell { get; set; }
+    [SerializeField] List<ItemToSell> m_itemsToSell;
 
     private void Awake()
     {
@@ -36,11 +38,16 @@ public class InventorySystem : MonoBehaviour
         inventoryToSell = new List<InventoryItemToSell>();
         m_itemToSellDictionary = new Dictionary<ItemToSell, InventoryItemToSell>();
         
-        inventoryUI = FindObjectOfType<InventoryUIManager>();
+        //inventoryUI = FindObjectOfType<InventoryUIManager>();
 
         foreach(InventoryItemData newItemData in m_items)
         {
             Add(newItemData);
+        }
+
+        foreach (ItemToSell newItem in m_itemsToSell)
+        {
+            AddToSell(newItem);
         }
     }
 
@@ -80,10 +87,12 @@ public class InventorySystem : MonoBehaviour
     {
         if (m_itemToSellDictionary.TryGetValue(referenceData, out InventoryItemToSell value))
         {
+            print("Добавили предмет");
             value.AddToStack();
         }
         else
         {
+            print("Создали предмет");
             InventoryItemToSell newItem = new InventoryItemToSell(referenceData);
             inventoryToSell.Add(newItem);
             m_itemToSellDictionary.Add(referenceData, newItem);
@@ -97,6 +106,7 @@ public class InventorySystem : MonoBehaviour
             value.RemoveFromStack();
             if(value.stackSize==0)
             {
+                print("Удалили предмет");
                 inventoryToSell.Remove(value);
                 m_itemToSellDictionary.Remove(referenceData);
             }
