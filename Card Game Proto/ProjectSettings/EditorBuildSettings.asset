@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProtoShop.unity
     guid: b6b9eacaf730b1d49b789d34850a874b
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 05985b2e1ab56d846bfcdec7d8ca0e20
+  - enabled: 1
+    path: Assets/Scenes/ProtoShopVine.unity
+    guid: 68eb9f1fbb310e64381e04d5a0e2f062
   m_configObjects: {}

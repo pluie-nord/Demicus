@@ -3394,6 +3394,7 @@ GameObject:
   - component: {fileID: 1950114020}
   - component: {fileID: 1950114022}
   - component: {fileID: 1950114021}
+  - component: {fileID: 1950114023}
   m_Layer: 5
   m_Name: Exit Trigger
   m_TagString: Untagged
@@ -3459,6 +3460,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950114019}
   m_CullTransparentMesh: 1
+--- !u!114 &1950114023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950114019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cf9113d0722b74e90fe4c6bd4dd4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: {fileID: 102900000, guid: 05985b2e1ab56d846bfcdec7d8ca0e20, type: 3}
 --- !u!1 &2064542060
 GameObject:
   m_ObjectHideFlags: 0
