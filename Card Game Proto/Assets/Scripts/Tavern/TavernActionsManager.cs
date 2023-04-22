@@ -10,5 +10,4 @@ public class TavernActionsManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToLoad.name);
     }
-
 }
