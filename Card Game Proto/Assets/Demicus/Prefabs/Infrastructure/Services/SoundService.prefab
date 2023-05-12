@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6646650124890085914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966350900065058971}
+  - component: {fileID: 4032918743194210320}
+  - component: {fileID: 1935815154396885379}
+  m_Layer: 0
+  m_Name: SoundService
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &966350900065058971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646650124890085914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4032918743194210320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646650124890085914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40203a9bd439a441b0390932d9b0439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fmodEvents:
+    _ambience:
+      Guid:
+        Data1: -924786938
+        Data2: 1092494029
+        Data3: 925417116
+        Data4: 1781317691
+      Path: event:/Ambient/Ambient
+    _music:
+      Guid:
+        Data1: 1881404151
+        Data2: 1303179044
+        Data3: -719187067
+        Data4: -1179508411
+      Path: event:/Music/Music
+    _comicsMusic:
+      Guid:
+        Data1: -198308582
+        Data2: 1279719610
+        Data3: -460914036
+        Data4: 1346016879
+      Path: event:/Music/Music_Comics
+    _winSound:
+      Guid:
+        Data1: -1871422586
+        Data2: 1202958418
+        Data3: -555172952
+        Data4: -691649593
+      Path: event:/Win_Loose/Win
+    _loseSound:
+      Guid:
+        Data1: -32859984
+        Data2: 1297474662
+        Data3: -258842443
+        Data4: -13381124
+      Path: event:/Win_Loose/Loose
+--- !u!114 &1935815154396885379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646650124890085914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 1
+  UnloadEvent: 2
+  Banks:
+  - Master
+  CollisionTag: 
+  PreloadSamples: 0

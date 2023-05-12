@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb1886144cbfca34396743af2778e471, type: 3}
+  m_Name: NegativeEffectCard1
+  m_EditorClassIdentifier: 
+  Type: 2
+  StoryCardType: 0
+  NextStoryCardType: 0
+  Name: "\u041E\u0442\u0440\u0438\u0446\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+    \u044D\u0444\u0444\u0435\u043A\u0442"
+  Attention: 0
+  Interest: 0
+  Nonsense: 0
+  Description: "\u0421\u043D\u0438\u043C\u0430\u0435\u0442 2 \u043E\u0447\u043A\u0430
+    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0430."
+  StoryDescription: 
+  GamePhrase: 
+  CardEffect: {fileID: 11400000, guid: edbcb0c4a22304741bf0832352870c05, type: 2}
+  bgIcon: {fileID: 0}
+  SideParts: {fileID: 0}

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9fe62ec5a1f1df48b8c80a1c6ed3ac1, type: 3}
+  m_Name: GameStaticData
+  m_EditorClassIdentifier: 
+  _windows:
+  - ID: 0
+    Window: {fileID: 6539333087589960381, guid: 687ca05ea5465ad4daaf27450732441a, type: 3}
