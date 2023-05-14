@@ -19,7 +19,6 @@ namespace Demicus.Code.Runtime.Components
             _gameStateMachine = gameStateMachine;
         }
 
-
         private void OnMouseDown()
         {
             _gameStateMachine.Enter<LoadLevelState, SceneID>(_sceneToLoad);

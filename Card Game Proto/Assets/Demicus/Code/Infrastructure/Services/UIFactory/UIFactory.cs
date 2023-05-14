@@ -12,6 +12,7 @@ namespace Demicus.Code.Infrastructure.Services.UIFactory
         private readonly IStaticDataService _staticDataService;
         private readonly IZenjectFactory _zenjectFactory;
         private Transform _uiRoot;
+        public Transform UIRootObject => _uiRoot;
 
         [Inject]
         public UIFactory(IStaticDataService staticDataService, IZenjectFactory zenjectFactory)

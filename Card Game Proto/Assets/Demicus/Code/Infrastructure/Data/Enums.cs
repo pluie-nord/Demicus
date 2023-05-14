@@ -16,6 +16,7 @@ namespace Demicus.Code.Infrastructure.Data
     public enum WindowID
     {
         UiRoot = 0,
+        LocationInfo = 1,
     }
 }
 
