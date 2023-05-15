@@ -22,6 +22,7 @@ namespace Demicus.Code.Runtime.Map
             _UIFactory.ClearUIRoot();
             GameObject UIWindow = _UIFactory.CreateWindow(WindowID.LocationInfo);
             UIWindow.GetComponent<LocationInfoWindow>().SetSceneInfo(GetComponent<LocationInfoComponent>());
+            UIWindow.GetComponent<LocationInfoWindow>().shopInfo = GetComponent<ShopInfoComponent>();
         }
     }
 }

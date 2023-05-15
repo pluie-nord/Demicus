@@ -17,6 +17,8 @@ public class LocationInfoWindow : MonoBehaviour
     [SerializeField] private Button _closeButton;
     [SerializeField] private Button _continueButton;
 
+    public ShopInfoComponent shopInfo;
+
     private SceneID _sceneToLoad;
 
     private IGameStateMachine _gameStateMachine;    
@@ -59,7 +61,8 @@ public class LocationInfoWindow : MonoBehaviour
 
     private void Continue()
     {
-        _gameStateMachine.Enter<LoadLevelState, SceneID>(_sceneToLoad);
+        GameObject location = _UIFactory.CreateWindow(WindowID.Shop);
+        location.GetComponent<ShopWIndow>().SetInfo(shopInfo.shopType, shopInfo.shopSprite, shopInfo.shopOwnerSprite, shopInfo.shopItems);
     }
 
     private void OnDestroy()

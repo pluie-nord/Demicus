@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 419393987}
   - component: {fileID: 419393986}
   - component: {fileID: 419393988}
+  - component: {fileID: 419393989}
   m_Layer: 5
   m_Name: Shop 1
   m_TagString: Untagged
@@ -305,6 +306,26 @@ MonoBehaviour:
   _name: "\u0412\u0438\u043D\u043D\u044B\u0439 \u043C\u0430\u0433\u0430\u0437\u0438\u043D"
   _descriprion: "\u0422\u043E\u0432\u0430\u0440\u044B \u0434\u043B\u044F \u0438\u0437\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F
     \u0432\u0438\u043D\u0430"
+--- !u!114 &419393989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419393984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745d807c3c2115d49938bd8edc49a50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopType: 0
+  shopSprite: {fileID: 21300000, guid: 397567e0dfc9a374ba1758c833330f6f, type: 3}
+  shopOwnerSprite: {fileID: 21300000, guid: 447e91f444cf830449af1e4e63771ca5, type: 3}
+  shopItems:
+  - {fileID: 11400000, guid: d343c331de57ed947abeb473764d537a, type: 2}
+  - {fileID: 11400000, guid: 8eb5df2dc95047047a2a2ee85943a639, type: 2}
+  - {fileID: 11400000, guid: f7549f905781d0d4c90f2f181c78d2a2, type: 2}
+  - {fileID: 11400000, guid: e351814b83ae795419f161647af3e97c, type: 2}
 --- !u!1 &877584543
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +840,7 @@ GameObject:
   - component: {fileID: 1739996827}
   - component: {fileID: 1739996826}
   - component: {fileID: 1739996828}
+  - component: {fileID: 1739996829}
   m_Layer: 5
   m_Name: Shop 1 (1)
   m_TagString: Untagged
@@ -905,6 +927,25 @@ MonoBehaviour:
   _name: "\u0411\u0430\u0437\u0430\u0440"
   _descriprion: "\u0412\u0441\u0451, \u0447\u0442\u043E \u0432\u0430\u0448\u0435\u0439
     \u0434\u0443\u0448\u0435 \u0443\u0433\u043E\u0434\u043D\u043E"
+--- !u!114 &1739996829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739996824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745d807c3c2115d49938bd8edc49a50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopType: 0
+  shopSprite: {fileID: 21300000, guid: 397567e0dfc9a374ba1758c833330f6f, type: 3}
+  shopOwnerSprite: {fileID: 21300000, guid: b6ebecb665a22f94dbcd92469db312d9, type: 3}
+  shopItems:
+  - {fileID: 11400000, guid: 52c1db59503480443b7c27c735a58039, type: 2}
+  - {fileID: 11400000, guid: 73c63c3bdd78bf54796034e1b7cfdb28, type: 2}
+  - {fileID: 11400000, guid: d77021124093c6d49ba292969e3bc5be, type: 2}
 --- !u!1 &1865182704
 GameObject:
   m_ObjectHideFlags: 0

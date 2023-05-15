@@ -56,6 +56,7 @@ public class InventorySystem : MonoBehaviour
         if (m_itemDictionary.TryGetValue(referenceData, out InventoryItem value))
         {
             value.AddToStack();
+            Debug.Log("КУпили");
             //inventoryUI.StackToInventory(referenceData, value.stackSize);
         }
         else

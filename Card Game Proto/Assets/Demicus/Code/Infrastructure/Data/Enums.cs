@@ -17,11 +17,18 @@ namespace Demicus.Code.Infrastructure.Data
     {
         UiRoot = 0,
         LocationInfo = 1,
+        Shop = 2,
+
     }
 
     public enum FloorplanType
     {
         Tables = 0,
+    }
+
+    public enum ShopType
+    {
+        FoodIngredients = 0,
     }
 }
 

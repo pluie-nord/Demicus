@@ -17,3 +17,5 @@ MonoBehaviour:
     Window: {fileID: 6539333087589960381, guid: 687ca05ea5465ad4daaf27450732441a, type: 3}
   - ID: 1
     Window: {fileID: 5229503248698319644, guid: 61152496e88803e4cbc006eef4846d6a, type: 3}
+  - ID: 2
+    Window: {fileID: 5392998894673408641, guid: 0325b1c3c58a8c24697b3fbe51f31fcd, type: 3}

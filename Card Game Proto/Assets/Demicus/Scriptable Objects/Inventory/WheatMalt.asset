@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 9
   displayName: "\u041F\u0448\u0435\u043D\u0438\u0447\u043D\u044B\u0439 \u0441\u043E\u043B\u043E\u0434"
-  icon: {fileID: 0}
-  prefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 1337e4ef8388b4c49978f9956eb73053, type: 3}
