@@ -8,6 +8,7 @@ public class TavernBoardManager : MonoBehaviour
     [SerializeField] private GameObject Board;
     [SerializeField] private GameObject BulletinBoard;
     [SerializeField] private GameObject TavernInteractables;
+    [SerializeField] private GameObject Floorplan;
     public void OpenMenuManager()
     {
         MenuManager.SetActive(true);
@@ -22,7 +23,14 @@ public class TavernBoardManager : MonoBehaviour
 
     public void OpenFloorplanManager()
     {
+        Floorplan.SetActive(true);
+        Board.SetActive(false);
+    }
 
+    public void CloseFloorplanManager()
+    {
+        Floorplan.SetActive(false);
+        Board.SetActive(true);
     }
 
     public void OpenBoard()

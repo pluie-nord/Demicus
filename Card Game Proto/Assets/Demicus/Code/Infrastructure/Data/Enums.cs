@@ -18,5 +18,10 @@ namespace Demicus.Code.Infrastructure.Data
         UiRoot = 0,
         LocationInfo = 1,
     }
+
+    public enum FloorplanType
+    {
+        Tables = 0,
+    }
 }
 
